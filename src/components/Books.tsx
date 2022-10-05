@@ -20,12 +20,14 @@ function Books() {
   return (
     <div>
       {allBooks.map((book) => (
-        <Container key={book._id}>
-          <img src={book.image} />
-          <p>{book.titel}</p>
-          <p>{book.genre.name}</p>
-          <p>{book.auther.name}</p>
-        </Container>
+        <BookDiv>
+          <div key={book._id}>
+            <img src={book.image} />
+            <p>{book.titel}</p>
+            <p>{book.genre.name}</p>
+            <p>{book.auther.name}</p>
+          </div>
+        </BookDiv>
       ))}
     </div>
   );
@@ -33,23 +35,13 @@ function Books() {
 
 export default Books;
 
-const Container = styled.div`
-  width: 150px;
-  height: 250px;
+const BookDiv = styled.div`
   border: 2px solid black;
   border-radius: 16px;
-  place-items: center;
+  height: 200px;
+  width: 150px;
 
   p {
-    font-size: 12px;
-    padding-left: 30px;
-  }
-
-  img {
-    border: 15px #2a2831;
-    border-radius: 16px;
-    width: 150px;
-    height: 150px;
-    padding-right: 5px;
+    margin: 0px;
   }
 `;

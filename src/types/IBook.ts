@@ -5,6 +5,7 @@ export interface IBook {
   image: string;
   auther: Auther;
   genre: Genre;
+  sidebar: Sidebar;
 }
 
 interface Auther {
@@ -16,4 +17,11 @@ interface Auther {
 interface Genre {
   name: String;
   _id: Number;
+}
+
+interface Sidebar {
+  Explore: String;
+  Genre: String;
+  Auther: String;
+  Saved: String;
 }
