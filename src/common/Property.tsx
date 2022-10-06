@@ -4,7 +4,9 @@ import styled from "styled-components";
 function Property() {
   return (
     <SearchDiv>
-      <div>hej</div>
+      <div>
+        <p>Books</p>
+      </div>
     </SearchDiv>
   );
 }
@@ -15,4 +17,12 @@ const SearchDiv = styled.div`
   height: 100px;
   width: 199px;
   border: 1px solid black;
+  border-top-left-radius: 35px;
+
+  p {
+    place-items: center;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-size: 25px;
+  }
 `;

@@ -54,7 +54,6 @@ const SearchDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 9fr;
   grid-template-rows: 1fr;
-  height: 100px;
+  height: 100%;
   width: 100%;
-  border: 1px solid black;
 `;

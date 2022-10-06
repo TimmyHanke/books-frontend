@@ -24,12 +24,15 @@ function Sidebar({ Explore, Genre, Auther }: Isidebar) {
 export default Sidebar;
 
 const SidebarDiv = styled.div`
-  height: 150px;
-  width: 200px;
+  height: 200%;
+  width: 199px;
   border: 1px solid black;
+  border-bottom-left-radius: 35px;
 
   button {
-    height: 50px;
+    height: 25px;
     width: 200px;
+    border: 1px solid gray;
+    border-radius: 30px;
   }
 `;
