@@ -9,7 +9,7 @@ function Sidebar({ Explore, Genre, Auther }: Isidebar) {
     { _id: "3", name: "Auther" },
   ];
   return (
-    <SidebarDiv>
+    <SidebarLeft>
       <div>
         {sidebar.map((bar) => (
           <div key={bar._id}>
@@ -17,17 +17,18 @@ function Sidebar({ Explore, Genre, Auther }: Isidebar) {
           </div>
         ))}
       </div>
-    </SidebarDiv>
+    </SidebarLeft>
   );
 }
 
 export default Sidebar;
 
-const SidebarDiv = styled.div`
+const SidebarLeft = styled.div`
   height: 200%;
   width: 199px;
   border: 1px solid black;
   border-bottom-left-radius: 35px;
+  background-color: yellow;
 
   button {
     height: 25px;

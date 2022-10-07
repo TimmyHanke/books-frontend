@@ -18,6 +18,7 @@ const SearchDiv = styled.div`
   width: 199px;
   border: 1px solid black;
   border-top-left-radius: 35px;
+  background-color: blue;
 
   p {
     place-items: center;

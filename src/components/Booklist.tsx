@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { IBook } from "../types/IBook";
 import { Isidebar } from "../types/Isidebar";
 import Books from "./Books";
-import Sidebar from "../common/Sidebar";
+import Sidebarleft from "../common/SidebarLeft";
+import SidebarRight from "../common/SidebarRight";
 import Searchbar from "../common/Searchbar";
 import Property from "../common/Property";
+import Bottom from "../common/Bottom";
 
 function Booklist() {
   return (
@@ -20,10 +22,14 @@ function Booklist() {
       </SearchDiv>
       <Container>
         <div>
-          <Sidebar Explore={"Explore"} Genre={"Genre"} Auther={"Auther"} />
+          <Sidebarleft Explore={"Explore"} Genre={"Genre"} Auther={"Auther"} />
         </div>
         <Books />
+        <div>
+          <SidebarRight />
+        </div>
       </Container>
+      <Bottom />
     </div>
   );
 }
@@ -32,15 +38,15 @@ export default Booklist;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 4fr 4fr 1fr;
   grid-template-rows: 300px;
   width: 100%;
-  height: 100%;
-
-  p {
-    font-size: 12px;
-    padding-left: 30px;
-  }
+  height: 602px;
+  background-color: #fe0303;
+  margin-bottom: 500px;
+  font-size: 12px;
+  padding-left: 1px;
+  margin-bottom: -200px;
 
   img {
     border: 15px blue;
@@ -56,4 +62,7 @@ const SearchDiv = styled.div`
   grid-template-rows: 1fr;
   height: 100%;
   width: 100%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-color: green;
 `;
