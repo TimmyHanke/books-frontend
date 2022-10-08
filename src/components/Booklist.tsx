@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { IBook } from "../types/IBook";
 import { Isidebar } from "../types/Isidebar";
@@ -10,6 +11,9 @@ import Property from "../common/Property";
 import Bottom from "../common/Bottom";
 
 function Booklist() {
+  const [selectedPage, setselectedPage] = useState(1);
+  const [pageSize, setpageSize] = useState(4);
+
   return (
     <div>
       <SearchDiv>
