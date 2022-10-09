@@ -35,5 +35,6 @@ const SidebarLeft = styled.div`
     width: 200px;
     border: 1px solid gray;
     border-radius: 30px;
+    cursor: pointer;
   }
 `;

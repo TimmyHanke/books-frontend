@@ -42,5 +42,6 @@ const SearchDiv = styled.div`
     border-radius: 35px;
     margin-left: 1400px;
     margin-top: 10px;
+    cursor: pointer;
   }
 `;
