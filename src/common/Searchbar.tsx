@@ -37,10 +37,10 @@ const SearchDiv = styled.div`
 
   input {
     height: 50px;
-    width: 200px;
-    border: 5px solid black;
+    width: 400px;
+    border: 1px solid black;
     border-radius: 35px;
-    margin-left: 1300px;
+    margin-left: 1000px;
     margin-top: 10px;
     cursor: pointer;
   }
