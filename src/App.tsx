@@ -1,12 +1,18 @@
-import Books from "./components/Books";
 import Booklist from "./components/Booklist";
+import styled from "styled-components";
 
 function App() {
   return (
-    <div>
-      <Booklist />
-    </div>
+    <AppDiv>
+      <div>
+        <Booklist />
+      </div>
+    </AppDiv>
   );
 }
 
 export default App;
+
+const AppDiv = styled.div`
+  margin: 50px;
+`;

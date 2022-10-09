@@ -40,7 +40,7 @@ const SearchDiv = styled.div`
     width: 200px;
     border: 5px solid black;
     border-radius: 35px;
-    margin-left: 1400px;
+    margin-left: 1300px;
     margin-top: 10px;
     cursor: pointer;
   }
