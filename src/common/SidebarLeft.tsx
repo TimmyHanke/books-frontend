@@ -27,7 +27,7 @@ const SidebarLeft = styled.div`
   height: 200%;
   width: 199px;
   border: 1px solid black;
-  border-bottom-left-radius: 35px;
+
   background-color: yellow;
 
   button {
